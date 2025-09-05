@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Porsche 911 - Легендарный спорткар</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #fff;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #dc3545;
+        }
+
+        .hero {
+            height: 80vh;
+            background-image: linear-gradient(to bottom, #fff, #f5f5f5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .hero img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .content {
+            padding: 2rem 0;
+        }
+
+        .section {
+            background-color: #fff;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #dc3545;
+            margin-bottom: 1rem;
+        }
+
+        .facts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .fact-card {
+            background-color: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .fact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .specifications {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .spec-item {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 60vh;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .specifications {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#about">О модели</a></li>
+                    <li><a href="#history">История</a></li>
+                    <li><a href="#specs">Характеристики</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <img src="https://autogoda.ru/archive/Porsche-911-Hybrid-2024-3.jpg" alt="Porsche 911">
+    </section>
+
+    <main class="content">
+        <div class="container">
+            <section id="about" class="section">
+                <h1>Porsche 911</h1>
+                <p>Porsche 911 - это легендарный спортивный автомобиль, производящийся с 1963 года. Это одна из самых узнаваемых машин в мире, известная своим характерным дизайном и расположением двигателя в задней части.</p>
+                
+                <div class="facts-grid">
+                    <div class="fact-card">
+                        <h3>Достижения</h3>
+                        <ul>
+                            <li>Пятая позиция в рейтинге "Автомобиль столетия" (1999)</li>
+                            <li>Самый успешный гоночный автомобиль всех времён</li>
+                            <li>Более 1 миллиона проданных экземпляров</li>
+                        </ul>
+                    </div>
+
+                    <div class="fact-card">
+                        <h3>Инновации</h3>
+                        <ul>
+                            <li>Уникальная конструкция с задним расположением двигателя</li>
+                            <li>Первый серийный автомобиль с турбонаддувом (1974)</li>
+                            <li>Прорывные технологии в области аэродинамики</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="history" class="section">
+                <h2>История модели</h2>
+                <p>Porsche 911 был представлен на Франкфуртском автосалоне в 1963 году как преемник Porsche 356. Автомобиль сразу же привлёк внимание своей необычной компоновкой и впечатляющими характеристиками.</p>
+                
+                <div class="specifications">
+                    <div class="spec-item">
+                        <h3>Технические характеристики</h3>
+                        <ul>
+                            <li>Двигатель: Боксер, 6 цилиндров</li>
+                            <li>Расположение: Задний привод</li>
+                            <li>Коробка передач: 7-скоростная PDK</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <h3>Производительность</h3>
+                        <ul>
+                            <li>Максимальная скорость: до 330 км/ч</li>
+                            <li>Разгон 0-100 км/ч: от 3 секунд</li>
+                            <li>Мощность: от 385 л.с.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Porsche 911. Все права защищены.</p>
+    </footer>
+</body>
+</html>
